@@ -27,8 +27,6 @@ class SiteLinks extends React.Component {
               <a href={config.siteLinkedInUrl}><i className="fa fa-linkedin" /></a>
             </li>
           )}
-        </ul>
-        <ul>
           {config.siteEmailUrl && (
             <li>
               <a href={`mailto:${config.siteEmailUrl}`}>
@@ -36,8 +34,6 @@ class SiteLinks extends React.Component {
               </a>
             </li>
           )}
-        </ul>
-        <ul>
           {config.siteRssUrl && (
             <li>
               <a href={config.siteRssUrl}><i className="fa fa-rss" /></a>
