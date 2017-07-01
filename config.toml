@@ -9,4 +9,4 @@ siteRssUrl = "#"
 
 googleAnalyticsId = ""
 
-linkPrefix = ""
+linkPrefix = "/blog"
