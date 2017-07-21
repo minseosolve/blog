@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router';
-import { prefixLink } from 'gatsby-helpers';
-import './style.css';
+import React from "react";
+import { Link } from "react-router";
+import { prefixLink } from "gatsby-helpers";
+import "./style.css";
 
 class SiteNav extends React.Component {
   render() {
@@ -9,11 +9,22 @@ class SiteNav extends React.Component {
       <nav className="blog-nav">
         <ul>
           <li>
-            <Link to={prefixLink('/')} activeClassName="current" onlyActiveOnIndex> Articles
+            <Link
+              to={prefixLink("/")}
+              activeClassName="current"
+              onlyActiveOnIndex
+            >
+              {" "}Articles
             </Link>
           </li>
           <li>
-            <Link to={prefixLink('/about/')} activeClassName="current"> About me
+            <Link to={prefixLink("/about/")} activeClassName="current">
+              {" "}About me
+            </Link>
+          </li>
+          <li>
+            <Link to={prefixLink("/portfolio/")} activeClassName="current">
+              {" "}Portfolio
             </Link>
           </li>
         </ul>

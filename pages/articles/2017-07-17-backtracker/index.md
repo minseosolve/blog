@@ -9,8 +9,6 @@ description:
   an algorithm learning/visualization tool to help learn recursive
   algorithms(especially backtracking) with step-by-step visualizations. Check it out!
 ---
-# Backtracker
-
 [![Image](http://i.imgur.com/ZHs5rqz.png)](https://minseokim.github.io/backtracker)
 
 [Backtracker](https://minseokim.github.io/backtracker) is an algorithm learning/visualization tool built with **React.js** that displays step-by-step environment visualization for popular recursive algorithms.
@@ -29,16 +27,16 @@ The most interesting part about the project was implementing a 'trace' function 
 
 The trace function has an API for the following types of events :
 
-- initWrapper(the wrapper function for the algorithm is invoked)
-- initRecursive(the recursive function for the algorithm is invoked)
+- initWrapper (the wrapper function for the algorithm is invoked)
+- initRecursive (the recursive function for the algorithm is invoked)
 - compare
 - assign
 - AddToSolution
-- returnRecursive(returning from Recursive function)
-- return(just return any value)
-- finishWrapper(wrapper is finished)
-- invokeFirstRecursiveCall(The first invocation of the recursive function)
-- recurse(Invoke subsequent invocations)
+- returnRecursive (returning from Recursive function)
+- return (just return any value)
+- finishWrapper (wrapper is finished)
+- invokeFirstRecursiveCall (The first invocation of the recursive function)
+- recurse (Invoke subsequent invocations)
 
 Each step keeps track of :
   1. callStackDepth
