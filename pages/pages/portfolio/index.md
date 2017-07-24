@@ -14,9 +14,18 @@ path: "/portfolio"
 [*Backtracker*](https://minseokim.github.io/backtracker) is an algorithm learning/visualization tool built with **vanilla React** that displays step-by-step environment visualization for popular recursive algorithms including **Permutations, Subsets, Combinations, and Parentheses Generator**. Check out the [code](https://github.com/minseokim/backtracker) and [app](https://minseokim.github.io/backtracker).
 
 ---
+### Data Structures in JavaScript using Test-Driven Development
+[![Image](http://i.imgur.com/5MWwigs.png)](https://github.com/minseokim/data-structures-tdd)
+
+##### Technologies Used :
+- **Mocha.js** for running tests
+- **Chai** for assertions
+
+[*This Project*](https://github.com/minseokim/data-structures-tdd) is a library that you can learn to implement data structures in JavaScript in your local environment while at the same time utilizing TDD(Test-Driven-Development). It supports common data structures such as binary search trees(balanced/unbalanced), heaps, circular arrays, graphs and tries. I created the entire testing spec/each implementation because I wanted to review data structures while at the same time learn to practice TDD and write unit tests.
+
 ### JSON Query Generator
 
-[![Image](http://i.imgur.com/T7n1UMQ.png)](https://minseokim.github.io/backtracker)
+[![Image](http://i.imgur.com/T7n1UMQ.png)](https://minseokim.github.io/query-generator)
 
 ##### Technologies Used :
 - **React.js**
