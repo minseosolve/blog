@@ -7,7 +7,7 @@ path: /delete-bst/
 category: Algorithms
 description: >-
   We will explore an algorithm to delete a node from a binary search tree while
-  taking advantage of recursion
+  taking advantage of recursion.
 ---
 While binary search trees support easy insertion and search, deletion is probably the trickier operation out of all its interface.
 
@@ -32,7 +32,11 @@ BinarySearchTree.prototype.deleteMin = function() {
 };
 ```
 
-What about a general **delete()** operation? We can take the same recursive approach, this time we just have to break the problem down into three large cases : One where the node to delete is a leaf, one where it has one child, and one where it has two children. The last case involving two children is the trickiest one, and it involves first finding the **minimum in the right-subtree**(Since this is the node that will replace our doomed node), copying its value to our deleting node, and then removing this duplicate node in the right-subtree. Another useful note here is to pass the reference of the parent node(root node) as an argument, since we won't be able to change the `this` context from inside the method.
+What about a general **delete()** operation? We can take the same recursive approach, this time we just have to break the problem down into three large cases : One where the node to delete is a leaf, one where it has one child, and one where it has two children.
+
+The last case involving two children is the trickiest one, and it involves first finding the **minimum in the right-subtree**(Since this is the node that will replace our doomed node), copying its value to our deleting node, and then removing this duplicate node in the right-subtree.
+
+Another useful note here is to pass the reference of the parent node(root node) as an argument, since we won't be able to change the `this` context from inside the method.
 
 ```
 BinarySearchTree.prototype.delete = function(val, root) {
@@ -67,7 +71,8 @@ BinarySearchTree.prototype.delete = function(val, root) {
       //Copy this data into root!
       root.data = minInRightSubTree.data;
 
-      //now there is a duplicate node in RightSubtree, delete it(We're calling it FROM the reference of the right subtree.)
+      //now there is a duplicate node in RightSubtree, delete it
+      //(We're calling it FROM the reference of the right subtree.)
       root.rightChild = root.delete(minInRightSubTree.data, root.rightChild);
     }
   }
