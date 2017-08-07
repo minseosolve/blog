@@ -14,7 +14,7 @@ description: >-
 
 If you're a front-end developer, chances are you've heard of **debouncing** and **throttling**. They're used in many scenarios involving rapidly-executing user events. It's easy to confuse the two(guilty as charged), so in this post I'll help distinguish between the two and help brainstorm simple implementations of both. For robust implementations of both, check out underscore or Lodash.
 
-First, check out this pen by Chris Coyieur from CSS-Tricks that illustrates a live, breathing example of both :
+Here is a live, breathing example of both before we get started :
 
 <p data-height="265" data-theme-id="0" data-slug-hash="vOZNQV" data-default-tab="js,result" data-user="chriscoyier" data-embed-version="2" data-pen-title="The Difference Between Throttling, Debouncing, and Neither" class="codepen">See the Pen <a href="https://codepen.io/chriscoyier/pen/vOZNQV/">The Difference Between Throttling, Debouncing, and Neither</a> by Chris Coyier  (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
