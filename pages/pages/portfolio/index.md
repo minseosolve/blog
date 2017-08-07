@@ -21,8 +21,9 @@ path: "/portfolio"
 - **Mocha.js** for running tests
 - **Chai** for assertions
 
-[*This Project*](https://github.com/minseokim/data-structures-tdd) is a library that you can learn to implement data structures in JavaScript in your local environment while at the same time utilizing TDD(Test-Driven-Development). It supports common data structures such as binary search trees(balanced/unbalanced), heaps, circular arrays, graphs and tries. I created the entire testing spec/each implementation because I wanted to review data structures while at the same time learn to practice TDD and write unit tests.
+Learn to write unit tests and review data structures at the same time! [*This Project*](https://github.com/minseokim/data-structures-tdd) is a library that you can use to learn to implement data structures in JavaScript in your local environment while at the same time utilizing TDD(Test-Driven-Development). It supports common data structures such as binary search trees(balanced/unbalanced), heaps, circular arrays, graphs and tries. I created the entire testing spec/each implementation from scratch because I wanted to review data structures while practicing TDD and writing unit tests.
 
+---
 ### JSON Query Generator
 
 [![Image](http://i.imgur.com/T7n1UMQ.png)](https://minseokim.github.io/query-generator)
@@ -33,7 +34,9 @@ path: "/portfolio"
 - **Jest, and Enzyme** for testing
 - **Bootstrap** for UI
 
-[*Query Generator*](https://minseokim.github.io/query-generator) is a simple JSON Query generator based on a given schema - It was completed in 72 hours as part of a coding challenge, so it was built with functionality in mind with minimal focus on UI(Bootstrap was used).
+[*Query Generator*](https://minseokim.github.io/query-generator) is a simple JSON Query generator based on a given schema - It was completed in 72 hours as part of a coding challenge, so it was built with functionality in mind with **minimal focus on UI(Bootstrap was used)**.
+
+The query accepts a `table name`, `start/end time`(in UNIX Epoch Format), `select_fields`, and a `where_clause` that will be dynamically generated depending on its parameters(`AND/OR`, etc).
 
 ---
 
