@@ -13,20 +13,20 @@ description: >-
 ---
 ![Image of scaling from Silicon Valley](http://i.imgur.com/sdJo1bi.jpg)
 
-
 Suppose your website, or your business is now starting to generate traffic and it's attracting more visitors & requests than you expected. What do you do? I have to admit, that even as someone working in front-end, I didn't take time to actually learn how scaling works. It wasn't until I watched the brilliant David Malan from Harvard's CS50(I highly recommend the lecture videos from his CS75 class on Web Development) that I started understanding the basics of scaling on the web. In this post I'll provide a gentle, high-level overview of scaling.
----
 
-###Scaling web servers
+#### Scaling web servers
+
 So there's two basic types of scaling, **vertical** and **horizontal**. **Vertical** scaling can be summarized as to throwing more resources/money at the problem - Buying more CPU, RAM, more processors and disk spaces. Unfortunately, more often than not this doesn't turn out to be a sustainable solution because every machine will have a 'ceiling' in terms of the amount of upgrades it can go through.
 
 **Horizontal** scaling is much more interesting, and is much more nuanced. To horizontally scale an application, we have to accept that there is a ceiling in terms of the hardware that we use, so we __architect our systems in such a way that we hopefully won't hit that ceiling__. So rather than purchasing an expensive machine, we might use multiple machines with the same level of performance to solve the problem.
 
 So let's say we're getting a ton of traffic, and in hopes to alleviate the problem we decide to use an additional web server on the back-end to handle the incoming requests.
 
-![Diagram of load balancer](http://www.2bnet.co.il/webfiles/fck/image/loadbalancer.JPG)*Full Photo credit to 2B.net*
+![Diagram of load balancer](http://www.2bnet.co.il/webfiles/fck/image/loadbalancer.JPG)*Full Photo credit : 2B.net*
 
-###Load Balancers
+#### Load Balancers
+
 This is where **load balancers** come in. A load balancer is the 'black box' that sits in between client and server and trusted with the task of directing each request to the proper server. They can also be a very expensive piece of machine, by the way.
 
 So then the obvious question is, how does the load balancer decide to handle client requests?
@@ -47,7 +47,8 @@ So let's say our load balancer can now deal with sessions. We're not overly conc
 ---
 ![Silicon Valley Data Storage Image](http://i.imgur.com/d887eoj.jpg)
 
-###Scaling databases
+#### Scaling databases
+
 What about storing data in our servers? We'll need to use a database, and the easiest way we know to store data is directly on our web servers themselves, meaning the database lives on the same box, the same machine as the web server.
 
 The obvious problem with this is that if a user does something that 'persists' - meaning some data is stored about the user on server #1, if that user happens to log in from a different computer, or somehow gets routed to a **different server**, we have no way of collecting the data about the user from the original location(Server #1).
@@ -62,6 +63,8 @@ To solve this, we can do things like **master-master** or **master-slave** datab
 Eventually, we'll have to introduce a load balancer for our databases as well as we end up using more than one databases, because we can't scale if we want each server to be able to talk to every single database.
 
 ![Application Architecture Diagram#2](http://i.imgur.com/uX3eGqY.png)
+
+#### What next?
 
 Whew. Still here so far? To summarize, we have a new architecture where we now have a load balancer in between the servers & the databases to make intelligent decisions on routing communication between servers & databases. Now, what to do about yet another single point of failure problem? We can use two load balancers again, using the _Active:Active_ approach where a pair of laod balancers constantly listen to each other for connection, and either one can receive packets and relay them to back-end servers. They send heartbeats across each other, and if at any point the heartbeat STOPS, the one that's still alive becomes completely in charge. _Active:Passive_ is similar, except only one load balancer is kept active, and if it dies, the passive one will promote itself to active, and take over the other load balancer's IP address as well.
 
