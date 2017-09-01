@@ -1,5 +1,5 @@
 ---
-title: Web scaling 101
+title: Web Scaling 101
 date: '2017-08-31T21:07:13.550Z'
 layout: post
 draft: true
