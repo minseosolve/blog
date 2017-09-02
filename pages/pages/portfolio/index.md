@@ -21,7 +21,15 @@ path: "/portfolio"
 - **Mocha.js** for running tests
 - **Chai** for assertions
 
-Learn to write unit tests and review data structures at the same time! [*This Project*](https://github.com/minseokim/data-structures-tdd) is a library that you can use to learn to implement data structures in JavaScript in your local environment while at the same time utilizing TDD(Test-Driven-Development). It supports common data structures such as binary search trees(balanced/unbalanced), heaps, circular arrays, graphs and tries. I created the entire testing spec/each implementation from scratch because I wanted to review data structures while practicing TDD and writing unit tests.
+Learn to write unit tests and review data structures at the same time! [*This Project*](https://github.com/minseokim/data-structures-tdd) is a library that you can use to learn to implement data structures in JavaScript in your local environment while at the same time utilizing TDD(Test-Driven-Development).
+
+The project supports the following data structures :
+  - Binary Search Trees(balanced/unbalanced)
+  - Heaps(Min-Heap)
+  - Graphs(Includes Depth-First Search, Breadth-First Search, Cycle-Detection)
+  - Tries(Prefix Trees)
+
+I created the entire testing spec/each implementation from scratch because I wanted to review data structures while practicing TDD and writing unit tests.
 
 ---
 ### JSON Query Generator
