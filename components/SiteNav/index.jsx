@@ -27,6 +27,9 @@ class SiteNav extends React.Component {
               {" "}Portfolio
             </Link>
           </li>
+          <li>
+            <a target="_blank" href="http://minseoalexkim.com">Book Reviews</a>
+          </li>
         </ul>
       </nav>
     );

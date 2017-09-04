@@ -12,6 +12,9 @@ description: >-
 ### What's the deal with HTTPS?
 If you're a front-end developer, chances are you've read articles, or listened to people urging you to convert your platform to start using HTTPS. In fact, Google announced back in 2014 that using HTTPS will [impact search ranking results](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html), sparking another frenzy on the web. Today, HTTPS website account for more than 30% of all Google search results.
 
+![Starbucks Wi-Fi Image](https://www.blogcdn.com/www.engadget.com/media/2010/07/twitpic-2click-starbucks.jpg)
+<Photo Credit : Engadget>
+
 Let's take a scenario that may be very common in our day-to-day lives : You take your laptop to work at a local Starbucks nearby, and connect using their public Wi-Fi. Without giving it extra thought, you check your bank account using online banking, like and comment some pictures on your Facebook account. Just think of all your personal data that's being sent in naked form back and forth across public connection - You're making a huge, naïve assumption that people connected to that same Starbucks wi-fi won't intercept or listen to your sensitive data that's being exchanged back and forth.
 
 Enter HTTPS! Yes, the S stands for Secure(It can also stand for SSL). With HTTPS, all your requests will be encrypted so that **only the server you're communicating with** will be able to understand it. HTTPS is also often called 'HTTP over Transport Layer Security', which we'll take a moment to dissect. **TLS** Encryption basically establishes a 'Chain of Trust', where the server will first identify itself with two things :
