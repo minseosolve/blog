@@ -40,16 +40,6 @@ class SiteLinks extends React.Component {
               </a>
             </li>
           )}
-          {config.siteRssUrl && (
-            <li>
-              <a
-                href={config.siteRssUrl}
-                target="_blank" rel="noopener noreferrer"
-              >
-                <i className="fa fa-rss" />
-              </a>
-            </li>
-          )}
         </ul>
       </div>
     );
