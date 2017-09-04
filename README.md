@@ -1,3 +1,5 @@
-# Personal Website
+# Technical Blog
 
-Personal website with blog and portfolio built with Gatsbyjs.
+The technical blog and portfolio of Alex Kim, written with GatsbyJS.
+
+Check it out at [minseoalex.kim](http://minseoalex.kim) or [minseokim.github.io](https://minseokim.github.io/blog).
