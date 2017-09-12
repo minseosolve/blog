@@ -82,7 +82,7 @@ The query accepts a `table name`, `start/end time`(in UNIX Epoch Format), `selec
 - **HTML5/SCSS**
 - **Bootstrap**
 
-[*Sayspeaking*](https://sayspeaking.com) is an online platform where students can take Korean conversation classes with trained tutors. I inherited the legacy project which was a themeforest template, and prototyped/developed the UI while at the same time refactoring most of the front-end codebase to reduce technical debt and allow for scalability/maintainability.
+*Sayspeaking* is an online platform where students can take Korean conversation classes with trained tutors. I inherited the legacy project which was a themeforest template, and prototyped/developed the UI while at the same time refactoring most of the front-end codebase to reduce technical debt and allow for scalability/maintainability.
 
 
 
